@@ -38,8 +38,8 @@ function PieChart() {
   });
   const defaultData = [
     { status: "Accepted", value: 0 },
-    { status: "Default", value: 0 },
-    { status: "Pending", value: 0 },
+    { status: "Request", value: 0 },
+    { status: "Done", value: 0 },
   ];
   status.forEach((e) => {
     defaultData.forEach((i) => {
@@ -52,7 +52,7 @@ function PieChart() {
     return e.value;
   });
   const chartData = {
-    labels: ["Accepted", "Default", "Pending"],
+    labels: ["Accepted", "Request", "Done"],
     datasets: [
       {
         data: values,
