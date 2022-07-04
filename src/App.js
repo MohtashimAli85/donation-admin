@@ -8,7 +8,6 @@ import {
   OrganizationEdit,
 } from "./components/pages/organization";
 import { OrderList, OrderShow } from "./components/pages/order";
-import { HistoryList, HistoryShow } from "./components/pages/history";
 import { theme } from "./theme/theme";
 import { firebaseConfig as config } from "./FIREBASE_CONFIG";
 import {
@@ -76,15 +75,9 @@ const App = () => (
     />
     <Resource
       name="order"
-      options={{ label: "Donations" }}
+      options={{ label: "History" }}
       list={OrderList}
       show={OrderShow}
-    />
-    <Resource
-      name="history"
-      options={{ label: "History" }}
-      list={HistoryList}
-      show={HistoryShow}
     />
   </Admin>
 );

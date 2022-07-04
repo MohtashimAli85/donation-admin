@@ -1,7 +1,6 @@
 import * as React from "react";
 import { DashboardMenuItem, Menu, MenuItemLink } from "react-admin";
 import CorporateFareIcon from "@mui/icons-material/CorporateFare";
-import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 import PeopleIcon from "@mui/icons-material/People";
 import HistoryIcon from "@mui/icons-material/History";
 import DeliveryDiningIcon from "@mui/icons-material/DeliveryDining";
@@ -22,11 +21,6 @@ export const CustomMenu = (props) => (
     />
     <MenuItemLink
       to="/order"
-      primaryText="Donations"
-      leftIcon={<VolunteerActivismIcon />}
-    />
-    <MenuItemLink
-      to="/history"
       primaryText="History"
       leftIcon={<HistoryIcon />}
     />
