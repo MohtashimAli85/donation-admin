@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.RaLabeled-label {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.MuiDrawer-root {
+  background-color: #ffffff !important;
+  box-shadow: 2px 0px 1px -1px rgba(0, 0, 0, 0.2),
+    1px 0px 3px 0px rgba(0, 0, 0, 0.1) !important;
+}
+.MuiMenuItem-root {
+  padding: 15px 10px !important;
+  margin-top: 0.25rem !important;
+  border-right: 3px solid transparent !important;
+  transition: border 0.5s ease-in;
+}
+.MuiAppBar-root {
+  box-shadow: none !important;
+}
+.RaMenuItemLink-active {
+  border-right: 3px solid #1dbf73 !important ;
+}
+.RaSidebar-fixed {
+  /* min-width: 250px; */
+  /* background-color: #fff !important; */
+}
+.RaMenu-closed {
+  /* min-width: 80px !important; */
+}
+
+.MuiToolbar-root .MuiButtonBase-root {
+  padding: 5px !important;
 }
